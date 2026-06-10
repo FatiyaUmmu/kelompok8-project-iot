@@ -1,0 +1,797 @@
+[
+    {
+        "id": "76800439c3f05447",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c9031c51fab161a2",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "74b12588b4902565",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "fe4c2e64a471f487",
+        "type": "ui_group",
+        "name": "Home",
+        "tab": "c9031c51fab161a2",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ac6d00f4a7b29dd",
+        "type": "ui_group",
+        "name": "lantai1",
+        "tab": "c9031c51fab161a2",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b7fe05c168622c35",
+        "type": "ui_group",
+        "name": "lantai2",
+        "tab": "c9031c51fab161a2",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e81d0cb3481c92a0",
+        "type": "ui_group",
+        "name": "lantai3",
+        "tab": "c9031c51fab161a2",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6efb8339c9df1495",
+        "type": "ui_group",
+        "name": "control",
+        "tab": "c9031c51fab161a2",
+        "order": 5,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e332ac9896ce7eeb",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "67fb389737566668",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "2451641710e7bdb8",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "10a9533b492c7433",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "67fb389737566668",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "2451641710e7bdb8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "bb7125ea9b5e2cbf",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "10a9533b492c7433",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "ef65f33a7c112841",
+        "type": "mqtt in",
+        "z": "76800439c3f05447",
+        "name": "L1 Status",
+        "topic": "parking/lantai1/status",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e332ac9896ce7eeb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1360,
+        "y": 320,
+        "wires": [
+            [
+                "13bcb6db564c064a",
+                "986a64d5798676dc",
+                "26a8cbf025a2d965"
+            ]
+        ]
+    },
+    {
+        "id": "13bcb6db564c064a",
+        "type": "function",
+        "z": "76800439c3f05447",
+        "name": "slot L1",
+        "func": "msg.payload = msg.payload.slot_terisi;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 320,
+        "wires": [
+            [
+                "408975042049dda0"
+            ]
+        ]
+    },
+    {
+        "id": "408975042049dda0",
+        "type": "ui_gauge",
+        "z": "76800439c3f05447",
+        "name": "Slot Terisi L1",
+        "group": "0ac6d00f4a7b29dd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}/3",
+        "min": 0,
+        "max": "3",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1790,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e8830d77ca609d1c",
+        "type": "ui_text",
+        "z": "76800439c3f05447",
+        "group": "0ac6d00f4a7b29dd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Gas L1 (%)",
+        "format": "{{value}}%",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1670,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c0d9fcd29a7643ee",
+        "type": "mqtt in",
+        "z": "76800439c3f05447",
+        "name": "L2 Status",
+        "topic": "parking/lantai2/status",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e332ac9896ce7eeb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1360,
+        "y": 500,
+        "wires": [
+            [
+                "a46dded613f7d86a",
+                "9c73fe73c1514c35",
+                "26a8cbf025a2d965"
+            ]
+        ]
+    },
+    {
+        "id": "a46dded613f7d86a",
+        "type": "function",
+        "z": "76800439c3f05447",
+        "name": "slot L2",
+        "func": "msg.payload = msg.payload.slot_terisi;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 500,
+        "wires": [
+            [
+                "35bfc7b47a8393f4"
+            ]
+        ]
+    },
+    {
+        "id": "35bfc7b47a8393f4",
+        "type": "ui_gauge",
+        "z": "76800439c3f05447",
+        "name": "Slot Terisi L2",
+        "group": "b7fe05c168622c35",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}/3",
+        "min": 0,
+        "max": "3",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1790,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8c60dbe4995150bb",
+        "type": "ui_text",
+        "z": "76800439c3f05447",
+        "group": "b7fe05c168622c35",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Gas L2 (%)",
+        "format": "{{value}}%",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1670,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ad6c12c8764de6a7",
+        "type": "mqtt in",
+        "z": "76800439c3f05447",
+        "name": "L3 Status",
+        "topic": "parking/lantai3/status",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e332ac9896ce7eeb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1360,
+        "y": 700,
+        "wires": [
+            [
+                "24f0e26c30cf6b12",
+                "259e185b50b3564d",
+                "26a8cbf025a2d965"
+            ]
+        ]
+    },
+    {
+        "id": "24f0e26c30cf6b12",
+        "type": "function",
+        "z": "76800439c3f05447",
+        "name": "slot L3",
+        "func": "msg.payload = msg.payload.slot_terisi;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 700,
+        "wires": [
+            [
+                "4f7770da21a0c16f"
+            ]
+        ]
+    },
+    {
+        "id": "4f7770da21a0c16f",
+        "type": "ui_gauge",
+        "z": "76800439c3f05447",
+        "name": "Slot Terisi L3",
+        "group": "e81d0cb3481c92a0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}/3",
+        "min": 0,
+        "max": "3",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1790,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "3d10eee16c771e38",
+        "type": "ui_text",
+        "z": "76800439c3f05447",
+        "group": "e81d0cb3481c92a0",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Gas L3 (%)",
+        "format": "{{value}}%",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1650,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "f759f74b3b208f7c",
+        "type": "mqtt in",
+        "z": "76800439c3f05447",
+        "name": "Gate Detect",
+        "topic": "parking/gate/detected",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "e332ac9896ce7eeb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 340,
+        "wires": [
+            [
+                "9eba1646e65dc44b"
+            ]
+        ]
+    },
+    {
+        "id": "9eba1646e65dc44b",
+        "type": "function",
+        "z": "76800439c3f05447",
+        "name": "format notif",
+        "func": "msg.payload = `🚗 Mobil mendekat Lantai ${msg.payload.lantai} | Sisa slot: ${msg.payload.tersedia}`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 380,
+        "wires": [
+            [
+                "7c68398ddcbbbaac"
+            ]
+        ]
+    },
+    {
+        "id": "7c68398ddcbbbaac",
+        "type": "ui_toast",
+        "z": "76800439c3f05447",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "show notification",
+        "x": 1270,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "d8e19f3fbca99b01",
+        "type": "ui_button",
+        "z": "76800439c3f05447",
+        "name": "",
+        "group": "6efb8339c9df1495",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Buka Portal",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "OPEN_GATE",
+        "payloadType": "str",
+        "topic": "string",
+        "topicType": "msg",
+        "x": 930,
+        "y": 500,
+        "wires": [
+            [
+                "07d512a0509d2e32"
+            ]
+        ]
+    },
+    {
+        "id": "029dcabcb9e4eb1d",
+        "type": "ui_button",
+        "z": "76800439c3f05447",
+        "name": "",
+        "group": "6efb8339c9df1495",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset Semua Slot",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RESET",
+        "payloadType": "str",
+        "topic": "string",
+        "topicType": "msg",
+        "x": 930,
+        "y": 580,
+        "wires": [
+            [
+                "07d512a0509d2e32"
+            ]
+        ]
+    },
+    {
+        "id": "07d512a0509d2e32",
+        "type": "mqtt out",
+        "z": "76800439c3f05447",
+        "name": "",
+        "topic": "parking/control",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e332ac9896ce7eeb",
+        "x": 1160,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "986a64d5798676dc",
+        "type": "function",
+        "z": "76800439c3f05447",
+        "name": "Gas1",
+        "func": "msg.payload = msg.payload.gas_persen;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 400,
+        "wires": [
+            [
+                "e8830d77ca609d1c"
+            ]
+        ]
+    },
+    {
+        "id": "9c73fe73c1514c35",
+        "type": "function",
+        "z": "76800439c3f05447",
+        "name": "Gas2",
+        "func": "msg.payload = msg.payload.gas_persen;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 600,
+        "wires": [
+            [
+                "8c60dbe4995150bb"
+            ]
+        ]
+    },
+    {
+        "id": "259e185b50b3564d",
+        "type": "function",
+        "z": "76800439c3f05447",
+        "name": "Gas3",
+        "func": "msg.payload = msg.payload.gas_persen;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 780,
+        "wires": [
+            [
+                "3d10eee16c771e38"
+            ]
+        ]
+    },
+    {
+        "id": "26a8cbf025a2d965",
+        "type": "function",
+        "z": "76800439c3f05447",
+        "name": "Simpan DB",
+        "func": "var data = {\n    waktu: new Date().toISOString(),\n    lantai: msg.payload.lantai || 1,\n    slot_terisi: msg.payload.slot_terisi || 0,\n    gas_persen: msg.payload.gas_persen || 0\n};\nmsg.payload = JSON.stringify(data) + \"\\n\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1970,
+        "y": 540,
+        "wires": [
+            [
+                "aa763748840bdd29"
+            ]
+        ]
+    },
+    {
+        "id": "aa763748840bdd29",
+        "type": "file",
+        "z": "76800439c3f05447",
+        "name": "",
+        "filename": "parking_db.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2020,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    }
+]
