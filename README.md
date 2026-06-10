@@ -43,16 +43,6 @@ Sistem Parkir Cerdas ini dirancang untuk mengotomatisasi proses masuk dan keluar
 6. **Dual Database**: SQLite untuk query terstruktur + JSON untuk logging mentah
 7. **Keamanan Terintegrasi**: API Key authentication pada backend + login Node-RED (bcrypt)
 
-### 2. Node-RED Dashboard
-Jalankan Node-RED melalui terminal:
-
-    cd ~/.node-red
-    node-red
-
-Akses melalui browser:
-- **Editor**: http://localhost:1880 (Login: `admin` / `admin123`)
-- **Dashboard UI**: http://localhost:1880/ui (Publik, tanpa login)
-
 ## Format Firmware per Lantai
 Setiap lantai memiliki **1 folder dan 1 file `.ino`** yang berisi seluruh logika (WiFi, MQTT, Sensor, Aktuator).
 
